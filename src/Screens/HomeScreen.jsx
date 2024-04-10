@@ -1,16 +1,60 @@
-import { Text, View, Button } from "react-native";
-import React from "react";
-import { HomeIcon, PhotoIcon, UserIcon } from "@heroicons/react/24/outline";
-import { Entypo } from "@expo/vector-icons";
+import { Text, View, Button, StyleSheet, ScrollView } from "react-native";
+import React, { Suspense, useEffect, useState } from "react";
+import { fetchNews } from "../services/dataFetch";
+import { NewsSkeleton } from "../Components/skeletons";
+import NewsList from "../Components/Home/NewsList";
 
-const HomeScreen = ({ navigation }) => {
+function HomeScreen({ navigation }) {
+    const [jsonData, setJsonData] = useState([]);
+
+    useEffect(() => {
+        async function fetchData() {
+            const data = await fetchNews("");
+            setJsonData(data);
+        }
+
+        fetchData();
+    }, []);
+
     return (
-        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-            <Text>Home Screen</Text>
-            <Button title="Go to Gallery" onPress={() => navigation.navigate("Gallery")} />
-            <Entypo name="home" size={24} color="black" />
+        <View style={styles.mainBlock}>
+            <View style={styles.header}>
+                <Text style={styles.titleText}>Новини</Text>
+            </View>
+            {jsonData.length !== 0 ? (
+                <View style={{ flex: 1 }}>
+                    <ScrollView>
+                        <Suspense fallback={<NewsSkeleton />}>
+                            <NewsList newsList={jsonData} />
+                        </Suspense>
+                    </ScrollView>
+                </View>
+            ) : (
+                <View style={{ flex: 1 }}>
+                    <Text>Oops! Something went wrong!</Text>
+                </View>
+            )}
         </View>
     );
-};
+}
+
+const styles = StyleSheet.create({
+    mainBlock: {
+        flex: 1,
+        backgroundColor: "#3e3e3e",
+        alignItems: "center",
+        justifyContent: "flex-start",
+    },
+    header: {
+        padding: 10,
+    },
+    titleText: {
+        fontSize: 21,
+        fontFamily: "Time New Roman",
+        fontWeight: "700",
+        color: "#FFFFFF",
+        textAlign: "center",
+    },
+});
 
 export default HomeScreen;

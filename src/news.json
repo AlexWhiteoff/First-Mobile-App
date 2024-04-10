@@ -1,0 +1,142 @@
+[
+    {
+        "id": "1",
+        "image_url": "https://example.com/image1.jpg",
+        "title": "Breaking News 1",
+        "date": "2024-04-15",
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "id": "2",
+        "image_url": "https://example.com/image2.jpg",
+        "title": "Breaking News 2",
+        "date": "2024-04-14",
+        "brief": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": "3",
+        "image_url": "https://example.com/image3.jpg",
+        "title": "Breaking News 3",
+        "date": "2024-04-13",
+        "brief": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": "4",
+        "image_url": "https://example.com/image4.jpg",
+        "title": "Breaking News 4",
+        "date": "2024-04-12",
+        "brief": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": "5",
+        "image_url": "https://example.com/image5.jpg",
+        "title": "Breaking News 5",
+        "date": "2024-04-11",
+        "brief": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": "6",
+        "image_url": "https://example.com/image6.jpg",
+        "title": "Breaking News 6",
+        "date": "2024-04-10",
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": "7",
+        "image_url": "https://example.com/image7.jpg",
+        "title": "Breaking News 7",
+        "date": "2024-04-09",
+        "brief": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": "8",
+        "image_url": "https://example.com/image8.jpg",
+        "title": "Breaking News 8",
+        "date": "2024-04-08",
+        "brief": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": "9",
+        "image_url": "https://example.com/image9.jpg",
+        "title": "Breaking News 9",
+        "date": "2024-04-07",
+        "brief": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": "10",
+        "image_url": "https://example.com/image10.jpg",
+        "title": "Breaking News 10",
+        "date": "2024-04-06",
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": "11",
+        "image_url": "https://example.com/image11.jpg",
+        "title": "Breaking News 11",
+        "date": "2024-04-05",
+        "brief": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": "12",
+        "image_url": "https://example.com/image12.jpg",
+        "title": "Breaking News 12",
+        "date": "2024-04-04",
+        "brief": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": "13",
+        "image_url": "https://example.com/image13.jpg",
+        "title": "Breaking News 13",
+        "date": "2024-04-03",
+        "brief": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": "14",
+        "image_url": "https://example.com/image14.jpg",
+        "title": "Breaking News 14",
+        "date": "2024-04-02",
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": "15",
+        "image_url": "https://example.com/image15.jpg",
+        "title": "Breaking News 15",
+        "date": "2024-04-01",
+        "brief": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": "16",
+        "image_url": "https://example.com/image16.jpg",
+        "title": "Breaking News 16",
+        "date": "2024-03-31",
+        "brief": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": "17",
+        "image_url": "https://example.com/image17.jpg",
+        "title": "Breaking News 17",
+        "date": "2024-03-30",
+        "brief": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": "18",
+        "image_url": "https://example.com/image18.jpg",
+        "title": "Breaking News 18",
+        "date": "2024-03-29",
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": "19",
+        "image_url": "https://example.com/image19.jpg",
+        "title": "Breaking News 19",
+        "date": "2024-03-28",
+        "brief": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": "20",
+        "image_url": "https://example.com/image20.jpg",
+        "title": "Breaking News 20",
+        "date": "2024-03-27",
+        "brief": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+]

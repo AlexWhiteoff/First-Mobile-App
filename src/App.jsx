@@ -10,23 +10,25 @@ import GalleryScreen from "./Screens/GalleryScreen";
 import ProfileScreen from "./Screens/ProfileScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import Header from "./Components/Header";
-import NavBar from "./Components/nav-links";
+import NavBar from "./Components/NavBar";
 
 const tabData = [
     {
-        name: "Home",
-        icon: HomeIcon,
+        name: "Головна",
+        iconActive: "home",
+        iconInactive: "home-outline",
         component: HomeScreen,
-        isActive: true,
     },
     {
-        name: "Gallery",
-        icon: PhotoIcon,
+        name: "Галерея",
+        iconActive: "images",
+        iconInactive: "images-outline",
         component: GalleryScreen,
     },
     {
-        name: "Profile",
-        icon: UserIcon,
+        name: "Профіль",
+        iconActive: "person",
+        iconInactive: "person-outline",
         component: ProfileScreen,
     },
 ];
@@ -38,7 +40,11 @@ function App() {
         <View style={{ flex: 1 }}>
             <Header />
             <NavigationContainer>
-                <Stack.Navigator>
+                <Stack.Navigator
+                    screenOptions={{
+                        headerShown: false,
+                    }}
+                >
                     {tabData.map((tab, index) => (
                         <Stack.Screen name={tab.name} component={tab.component} key={index} />
                     ))}
