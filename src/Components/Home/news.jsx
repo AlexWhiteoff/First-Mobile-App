@@ -59,7 +59,6 @@ const styles = StyleSheet.create({
         margin: 5,
     },
     image: {
-        // backgroundColor: "hsl(200, 20%, 95%)",
         width: "100%",
         height: "100%",
         borderRadius: 4,
@@ -71,20 +70,18 @@ const styles = StyleSheet.create({
         fontSize: 16,
         width: "100%",
         paddingLeft: 10,
-        // backgroundColor: "hsl(200, 20%, 95%)",
         borderRadius: 4,
     },
     titleText: {
         fontFamily: "Times New Roman",
         fontWeight: "bold",
         fontSize: 16,
-        color: "#fff",
+        color: "#3e3e3e",
     },
     dateBlock: {
         height: 18,
         width: "100%",
         fontSize: 13,
-        // backgroundColor: "hsl(200, 20%, 95%)",
         paddingLeft: 10,
         borderRadius: 4,
     },
@@ -92,19 +89,19 @@ const styles = StyleSheet.create({
         fontFamily: "Times New Roman",
         fontStyle: "italic",
         fontSize: 13,
+        color: "#777"
     },
     briefBlock: {
         height: 20,
         fontSize: 14,
         width: "100%",
         paddingLeft: 10,
-        // backgroundColor: "hsl(200, 20%, 95%)",
         borderRadius: 4,
     },
     briefText: {
         fontFamily: "Times New Roman",
         fontSize: 14,
-        color: "#fff",
+        color: "#3e3e3e",
     },
 });
 

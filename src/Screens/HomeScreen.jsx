@@ -9,8 +9,9 @@ function HomeScreen({ navigation }) {
 
     useEffect(() => {
         async function fetchData() {
-            const data = await fetchNews("");
-            setJsonData(data);
+            await fetchNews("")
+                .then((json) => setJsonData(json))
+                .catch((err) => console.error(err));
         }
 
         fetchData();
@@ -21,17 +22,13 @@ function HomeScreen({ navigation }) {
             <View style={styles.header}>
                 <Text style={styles.titleText}>Новини</Text>
             </View>
-            {jsonData.length !== 0 ? (
+            {Array.isArray(jsonData) && (
                 <View style={{ flex: 1 }}>
                     <ScrollView>
                         <Suspense fallback={<NewsSkeleton />}>
                             <NewsList newsList={jsonData} />
                         </Suspense>
                     </ScrollView>
-                </View>
-            ) : (
-                <View style={{ flex: 1 }}>
-                    <Text>Oops! Something went wrong!</Text>
                 </View>
             )}
         </View>
@@ -41,7 +38,7 @@ function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
     mainBlock: {
         flex: 1,
-        backgroundColor: "#3e3e3e",
+        backgroundColor: "#fff",
         alignItems: "center",
         justifyContent: "flex-start",
     },
@@ -52,7 +49,7 @@ const styles = StyleSheet.create({
         fontSize: 21,
         fontFamily: "Time New Roman",
         fontWeight: "700",
-        color: "#FFFFFF",
+        color: "#3e3e3e",
         textAlign: "center",
     },
 });

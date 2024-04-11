@@ -21,7 +21,7 @@ const NavBar = ({ tabs }) => {
         <View style={styles.navBar}>
             {tabs.map((tab, index) => {
                 // icon color
-                const activeColor = "#fff";
+                const activeColor = "#3e3e3e";
                 const inactiveColor = "#4F8EF7";
 
                 // icon props
@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     navBar: {
         backgroundColor: "#FFFFFF",
         display: "flex",
-        backgroundColor: "#3e3e3e",
         flexDirection: "row",
         justifyContent: "space-around",
         gap: 4,
@@ -62,6 +61,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         fontSize: 13,
+        color: "#3e3e3e",
     },
 });
 

@@ -3,20 +3,60 @@ import { StyleSheet, View } from "react-native";
 
 export const NewsSkeleton = () => {
     return (
-        <View style={styles.newsBlock}>
-            <View style={styles.imageBlock}>
-                <View style={styles.image}></View>
+        <View style={NewsSkeletonStyles.newsBlock}>
+            <View style={NewsSkeletonStyles.imageBlock}>
+                <View style={NewsSkeletonStyles.image}></View>
             </View>
-            <View style={styles.infoBlock}>
-                <View style={styles.title}></View>
-                <View style={styles.date}></View>
-                <View style={styles.brief}></View>
+            <View style={NewsSkeletonStyles.infoBlock}>
+                <View style={NewsSkeletonStyles.title}></View>
+                <View style={NewsSkeletonStyles.date}></View>
+                <View style={NewsSkeletonStyles.brief}></View>
             </View>
         </View>
     );
 };
 
-const styles = StyleSheet.create({
+export const ImageSkeleton = () => {
+    return <View style={ImageSkeletonStyles.imageBlock}></View>;
+};
+
+export const ImagesSkeleton = () => {
+    return (
+        <View style={ImageSkeletonStyles.galleryBLock}>
+            <ImageSkeleton />
+            <ImageSkeleton />
+            <ImageSkeleton />
+            <ImageSkeleton />
+            <ImageSkeleton />
+            <ImageSkeleton />
+            <ImageSkeleton />
+            <ImageSkeleton />
+            <ImageSkeleton />
+            <ImageSkeleton />
+        </View>
+    );
+};
+
+const ImageSkeletonStyles = StyleSheet.create({
+    galleryBLock: {
+        flex: 1,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        flexWrap: "wrap",
+        gap: 10,
+    },
+    imageBlock: {
+        flexBasis: "48%",
+        flexDirection: "row",
+        alignItems: "center",
+        elevation: 5,
+        backgroundColor: "hsl(200, 20%, 95%)",
+        height: 100,
+        borderRadius: 5,
+    },
+});
+
+const NewsSkeletonStyles = StyleSheet.create({
     newsBlock: {
         flex: 1,
         flexDirection: "row",
