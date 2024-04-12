@@ -1,7 +1,7 @@
 import { Text, View, Button, StyleSheet, ScrollView } from "react-native";
 import React, { Suspense, useEffect, useState } from "react";
 import { fetchNews } from "../services/dataFetch";
-import { NewsSkeleton } from "../Components/skeletons";
+import { NewsBlockSkeleton } from "../Components/skeletons";
 import NewsList from "../Components/Home/NewsList";
 
 function HomeScreen({ navigation }) {
@@ -9,7 +9,7 @@ function HomeScreen({ navigation }) {
 
     useEffect(() => {
         async function fetchData() {
-            await fetchNews("")
+            await fetchNews()
                 .then((json) => setJsonData(json))
                 .catch((err) => console.error(err));
         }
@@ -25,9 +25,7 @@ function HomeScreen({ navigation }) {
             {Array.isArray(jsonData) && (
                 <View style={{ flex: 1 }}>
                     <ScrollView>
-                        <Suspense fallback={<NewsSkeleton />}>
-                            <NewsList newsList={jsonData} />
-                        </Suspense>
+                        {jsonData.length > 0 ? <NewsList newsList={jsonData} /> : <NewsBlockSkeleton />}
                     </ScrollView>
                 </View>
             )}
@@ -37,10 +35,10 @@ function HomeScreen({ navigation }) {
 
 const styles = StyleSheet.create({
     mainBlock: {
-        flex: 1,
         backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "flex-start",
+        flex: 1,
+        // alignItems: "center",
+        // justifyContent: "flex-start",
     },
     header: {
         padding: 10,

@@ -46,7 +46,7 @@ function ProfileScreen({ navigation }) {
                     </View>
                     <View style={styles.formBlock}>
                         <View style={styles.inputBlock}>
-                            <Text style={styles.label}>Призвіще</Text>
+                            <Text style={styles.label}>Прізвище</Text>
                             <TextInput style={styles.input} keyboardType="default" inputMode="text" textContentType="middleName" />
                         </View>
                         <View style={styles.inputBlock}>

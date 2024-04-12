@@ -5,15 +5,15 @@ import { ImagesSkeleton } from "../Components/skeletons";
 import { fetchGallery } from "../services/dataFetch";
 
 const GalleryScreen = () => {
-    const [jsonData, setJsonData] = useState([]);
+    const [urlData, setUrlData] = useState([]);
 
     useEffect(() => {
-        async function fetchData() {
-            const data = await fetchGallery("");
-            setJsonData(data);
+        async function fetchUrl() {
+            const data = await fetchGallery();
+            setUrlData(data);
         }
 
-        fetchData();
+        fetchUrl();
     }, []);
 
     return (
@@ -23,9 +23,7 @@ const GalleryScreen = () => {
                     <Text style={styles.titleText}>Галерея</Text>
                 </View>
                 <View style={{ flex: 1 }}>
-                    <Suspense fallback={<ImagesSkeleton />}>
-                        <Gallery set={jsonData} />
-                    </Suspense>
+                    {urlData.length > 0 ? <Gallery images={urlData} /> : <ImagesSkeleton />}
                 </View>
             </ScrollView>
         </View>

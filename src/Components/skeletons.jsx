@@ -16,6 +16,18 @@ export const NewsSkeleton = () => {
     );
 };
 
+export const NewsBlockSkeleton = () => {
+    return (
+        <>
+          <NewsSkeleton />  
+          <NewsSkeleton />  
+          <NewsSkeleton />  
+          <NewsSkeleton />  
+          <NewsSkeleton /> 
+        </>
+    );
+}
+
 export const ImageSkeleton = () => {
     return <View style={ImageSkeletonStyles.imageBlock}></View>;
 };
