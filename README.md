@@ -1,79 +1,74 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Pet Project
 
-# Getting Started
+This project was created as a practice in mobile app development using React Native. It was a fascinating experience that helped explore basic concepts of UI/UX design, state management, and working with APIs.
 
-> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Project Overview
 
-## Step 1: Start the Metro Server
+The application consists of three screens:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+1. **Home Screen** – Displays the latest news fetched from an API.
+2. **Gallery Screen** – Showcases a grid of images.
+3. **Profile Screen** – Includes a simple registration form.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Features include:
 
-```bash
-# using npm
-npm start
+- Data fetching from [GitHubusercontent](https://raw.githubusercontent.com/) for news and images.
+- **Skeletons** to enhance the user experience while content is loading.
+- **Image fallbacks** that display default placeholders when images fail to load.
 
-# OR using Yarn
-yarn start
-```
+> **Note**: User authentication and data storage in a database are not implemented, as this project is focused on demonstrating skills and learning.
 
-## Step 2: Start your Application
+## Technologies
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+- **React Native**: Used to build the mobile app interface.
+- **JavaScript/TypeScript**: Programming language for app logic.
+- **GitHubusercontent API**: Source for fetching content.
 
-### For Android
+## Screenshots
 
-```bash
-# using npm
-npm run android
+*(Add screenshots of your app here to enhance visibility)*
 
-# OR using Yarn
-yarn android
-```
+## Installation and Setup
 
-### For iOS
+1. Clone the repository:
 
-```bash
-# using npm
-npm run ios
+   ```bash
+   git clone https://github.com/AlexWhiteOff/First-Mobile-App.git
+   ```
 
-# OR using Yarn
-yarn ios
-```
+2. Navigate to the project directory:
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+   ```bash
+   cd First-Mobile-App
+   ```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+3. Install dependencies:
 
-## Step 3: Modifying your App
+   ```bash
+   npm install
+   ```
 
-Now that you have successfully run the app, let's modify it.
+4. Run the project:
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+   ```bash
+   npx react-native run-android
+   # or for iOS
+   npx react-native run-ios
+   ```
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+> **Note**: This application was tested on Android devices only. Compatibility with iOS has not been verified. Running on iOS requires macOS with Xcode installed.
 
-## Congratulations! :tada:
+## Why This Matters
 
-You've successfully run and modified your React Native App. :partying_face:
+This project demonstrates foundational mobile development skills, including:
 
-### Now what?
+- Fetching and processing data from APIs.
+- State management and component creation.
+- Improving user experience through skeletons and fallback mechanisms.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+---
 
-# Troubleshooting
+## License
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+This project is created for educational purposes only and is not intended for commercial use.
 
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
