@@ -14,7 +14,7 @@ interface Images {
 export async function fetchNews(): Promise<News[]> {
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
-    const JSON_URL = "https://raw.githubusercontent.com/AlexWhiteoff/MobileLabs_assets/master/news.json";
+    const JSON_URL = "https://raw.githubusercontent.com/AlexWhiteoff/First-Mobile-App__assets/master/news.json";
 
     try {
         const response = await fetch(JSON_URL)
@@ -31,10 +31,8 @@ export async function fetchNews(): Promise<News[]> {
 }
 
 export async function fetchGallery() {
-    const JSON_URL = "https://raw.githubusercontent.com/AlexWhiteoff/MobileLabs_assets/master/gallery.json";
-    const IMAGE_FOLDER_URL = "https://raw.githubusercontent.com/AlexWhiteoff/MobileLabs_assets/master/Images/";
-
-    // await new Promise((resolve) => setTimeout(resolve, 3000));
+    const JSON_URL = "https://raw.githubusercontent.com/AlexWhiteoff/First-Mobile-App__assets/master/gallery.json";
+    const IMAGE_FOLDER_URL = "https://raw.githubusercontent.com/AlexWhiteoff/First-Mobile-App__assets/master/Images/";
 
     return await fetch(JSON_URL)
         .then((res) => res.json())
